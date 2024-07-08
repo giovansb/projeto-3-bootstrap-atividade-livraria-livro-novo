@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Livro Novo</title>
+    <link href="imagens/favicon/favicon.ico" rel="icon" type="image/x-icon">
+<!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!--Fontes Roboto e Playwrite-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!--CSS-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--Header-->
+    <header class="sticky-top">
+        <div class="navbar navbar-expand-lg p-4" id="cabecalho">
+            <div class="container">
+            <!--Nav-brand-->
+                <h1 class="nav-brand section-title">Livro Novo</h1>
+            <!--Botão menu responsivo-->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!--Menu nav cabecalho-->
+                <nav id="menu-nav" class="collapse navbar-collapse justify-content-end">
+                    <ul class=" nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#sobre-livraria" class="nav-link fw-bold"><i class="bi bi-house-door-fill me-1"></i>Sobre a Livraria Livro Novo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#destaques" class="nav-link fw-bold"><i class="bi bi-star me-1"></i>Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#acervo" class="nav-link fw-bold"><i class="bi bi-book-half me-1"></i>Nosso acervo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link fw-bold"><i class="bi bi-telephone-fill me-1"></i>Fale conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!--data-bs-spy="scroll"-->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+<!--Sobre a Livraria-->
+        <section id="sobre-livraria">
+        <!--Carrossel-->
+            <div id="carousel-livraria" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/slides/slide-1.jpg" alt="Jardim Secreto">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/slides/slide-2.jpg" alt="Alerta Vermelho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/slides/slide-3.jpg" alt="Alice no país das maravilhas">
+                    </div>
+                </div>
+            
+                <!--Botões do carrossel-->
+                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-livraria">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-livraria">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <!--Indicadores do carrossel-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-livraria" class="active"></button>
+                    <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-livraria"></button>
+                    <button type="button" data-bs-slide-to="2" data-bs-target="#carousel-livraria"></button>
+                </div>
+            </div>
+        <!--Texto e img sobre a livraria-->
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="imagens/Livraria.jpg" alt="Livros na estante" class="d-block w-100 rounded">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="section-title text-colored-green fw-bold mb-3">Sobre a livraria<span class="text-colored-light"> Livro Novo</span></h2>
+                        <p class="fs-5">
+                            <span class="fw-bold section-title">L</span>ivros são experiências e viagens inesquecíveis. Abrir um livro novo é como abrir uma porta para um universo desconhecido. A <span class="fw-bold section-title">livraria Livro Novo</span> busca sempre levar até a sua casa momentos de relaxamento e diversão, muito necessários no nosso dia-a-dia. Trazemos desde clássicos da literatura a lançamentos que estão bombando. Aportamos aventuras de ficção científica e também romances de suspirar. Com a nossa seleção de livros, esperamos que estas estórias tragam muitas emoções ao enredo da sua vida!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Destaques-->
+        <section id="destaques">
+            <div class="container pt-5 pb-5">
+                <div class="row pb-5">
+                    <h2 class="section-title fw-bold text-center text-colored-green">Os queridinhos <span class="text-colored-light">dos leitores</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <img src="imagens/destaques/de-1-jardim.jpg" alt="Jardim secreto" class="d-block w-100 rounded">
+                        <h3 class="section-title fs-4 text-colored-green fw-bold mt-2">Jardim secreto</h3>
+                        <p>Lírico e inesquecível, O Jardim Secreto é um livro que fascina crianças e adultos, inspirando a todos com sua receita secreta para vencer obstáculos, superar desafios e encontrar dentro de nossas essências um lugar onde a esperança sempre floresce.</p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <img src="imagens/destaques/de-2-alerta.jpg" alt="Alerta vermelho" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title fs-4 text-colored-green fw-bold mt-3">Alerta vermelho</h3>
+                        <p><span class="fw-bold fst-italic">Best-seller do New York Times <br> Vencedor dos prêmios Hugo, Locus e Nebula</span><br>A premiada série de Martha Wells finalmente chega ao Brasil! Alerta vermelho é o primeiro livro da série Diário de um robô-assassino, atualmente sendo adaptada pela Apple TV.</p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <img src="imagens/destaques/de-3-alice.png" alt="Alice no país das maravilhas" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title fs-4 text-colored-green fw-bold mt-3">Alice no país das maravilhas</h3>
+                        <p>Um clássico literário, uma obra que sobrevive à passagem do tempo, e que enriquece suas possibilidades de leitura. Alice no País das Maravilhas é uma leitura que encanta crianças com sua trama e arrebata entusiastas da linguagem com seus jogos de palavras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Nosso acervo-->
+        <section id="acervo">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="section-title fw-bold text-center text-colored-green">Nosso <span class="text-colored-light">acervo</span></h2>
+                </div>
+        <!--Nav do acervo-->
+                <div class="row mt-5">
+                    <div class="col-md-2 mb-4 mb-sm-4 mb-md-0">
+                        <aside>
+                            <nav class="nav flex-column nav-pills">
+                                <button type="button" class="fs-5 fw-bold nav-link active" data-bs-toggle="tab" data-bs-target="#scifi">Sci-fi</button>
+                                <button type="button" class="fs-5 fw-bold nav-link" data-bs-toggle="tab" data-bs-target="#fantasy">Fantasia</button>
+                                <button type="button" class="fs-5 fw-bold nav-link" data-bs-toggle="tab" data-bs-target="#romance">Romance</button>
+                            </nav>
+                        </aside>
+                    </div>
+        <!--Conteúdo do acervo-->
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                <!--Sci-fi-->            
+                            <div class="tab-pane active" id="scifi">
+                                <div class="row ms-md-3 ms-lg-0">
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/scifi/alerta-vermelho.jpg" alt="Alerta vermelho" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Alerta vermelho</h5>
+                                        <p>Um robô construído para matar. Bem, construído com peças ruins e um sistema falho, mas, ainda assim, criado para matar. Mas... e se ele quiser um pouco de paz? E se preferir hackear o próprio sistema para assistir a uma infinidade de séries na TV?</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/scifi/as-cavernas-de-aco.jpg" alt="As cavernas de aço" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">As carvernas de aço</h5>
+                                        <p>Em Nova York, o investigador de polícia Elijah Baley é escalado para investigar o assassinato de um embaixador dos Mundos Siderais.                                            A rede de intrigas envolve desde sociedades secretas até interesses interplanetários. Mas nada o preocupa tanto quanto o seu parceiro no caso, cuja eficiência pode tomar o seu emprego, algo cada vez mais comum. Pois seu parceiro é um robô.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/scifi/duna.jpg" alt="Duna" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Duna</h5>
+                                        <p>Uma estonteante mistura de aventura e misticismo, ecologia e política, este romance ganhador dos prêmios Hugo e Nebula deu início a uma das mais épicas histórias de toda a ficção científica. Duna é um triunfo da imaginação, que influenciará a literatura para sempre.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/scifi/justiça-ancilar.png" alt="Justiça ancilar" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Justiça ancilar</h5>
+                                        <p>Primeiro livro de uma trilogia emocionante. Ex-membro do Radch, o império que domina a galáxia, Breq era a nave Justiça de Toren (um porta-tropas gigantesco comandado por uma única inteligência artificial que habitava e controlava o corpo de milhares de soldados.)
+                                            Quando uma traição destrói tudo que conhecia (e a deixa habitando um frágil corpo humano) Breq não tem opção a não ser planejar sua vingança e matar quem a destruiu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                <!--fantasy-->            
+                            <div class="tab-pane" id="fantasy">
+                                <div class="row ms-md-3 ms-lg-0">
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/fantasia/jardim-secreto.jpg" alt="Jardim secreto" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Jardim secreto</h5>
+                                        <p>O Jardim Secreto conta a história de Mary Lennox, uma menina solitária que perde os pais em um surto de cólera na Índia e, como consequência, é enviada para uma mansão em Yorkshire para morar com seu tio misterioso. Cheia de incertezas diante da nova realidade cinzenta da Inglaterra, ela encontra consolo na natureza ao seu redor. E, quando descobre a existência de um jardim secreto nos terrenos da mansão e encontra a chave perdida, um mundo mágico se descortina diante de seus olhos.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/fantasia/alice-no-pais-das-maravilhas.jpg" alt="Alice no país das maravilhas" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Alice no país das maravilhas</h5>
+                                        <p>Uma menina, um coelho e uma história capazes de fazer qualquer um de nós voltar a sonhar. Alice é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso. Curiosa como toda criança, Alice segue o animal até cair em um buraco sem fim que mudou para sempre a literatura infantil.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/fantasia/o-hobbit.jpg" alt="O hobbit" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">O hobbit</h5>
+                                        <p>Bilbo Bolseiro era um dos mais respeitáveis hobbits de todo o Condado até que, um dia, o mago Gandalf bate à sua porta. A partir de então, toda sua vida pacata e campestre soprando anéis de fumaça com seu belo cachimbo começa a mudar. Ele é convocado a participar de uma aventura por ninguém menos do que Thorin Escudo-de-Carvalho, um príncipe do poderoso povo dos Anãos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                <!--romance-->            
+                            <div class="tab-pane" id="romance">
+                                <div class="row ms-md-3 ms-lg-0">
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/romance/orgulho-e-preconceito.jpg" alt="Orgulho e preconceito" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">Orgulho e preconceito</h5>
+                                        <p>"Orgulho e Preconceito" é uma obra clássica da renomada autora Jane Austen, que cativa leitores há mais de dois séculos com sua história envolvente e personagens inesquecíveis. Ambientado na Inglaterra do século XIX, este romance de época nos transporta para um mundo de etiqueta, amor e desafios sociais.A história gira em torno da encantadora e inteligente Elizabeth Bennet, uma jovem de espírito livre e opiniões fortes, e do misterioso e aristocrático Sr. Darcy.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                                        <img src="imagens/acervo/romance/a-culpa-e-das-estrelas.jpg" alt="A culpa é das estrelas" class="d-block w-100">
+                                        <h5 class="mt-2 fw-bold text-colored-green section-title">A culpa é das estrelas</h5>
+                                        <p>Hazel é uma paciente terminal. Ainda que, por um milagre da medicina, seu tumor tenha encolhido bastante ― o que lhe dá a promessa de viver mais alguns anos ―, o último capítulo de sua história foi escrito no momento do diagnóstico. Mas em todo bom enredo há uma reviravolta, e a de Hazel se chama Augustus Waters, um garoto bonito que certo dia aparece no Grupo de Apoio a Crianças com Câncer. Juntos, os dois vão preencher o pequeno infinito das páginas em branco de suas vidas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Fale conosco-->
+        <section id="contato">
+            <div class="container pt-5 pb-5">
+                <div class="row mb-5">
+                    <h2 class="section-title fw-bold text-center text-colored-green">Fale <span class="text-colored-light">conosco</span></h2>
+                </div>
+        <!--Formulário de contato-->
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-4">
+                                <label for="nome" class="form-label fw-bold text-colored-green fs-5">Seu nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-bold text-colored-green fs-5">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-4">
+                                <label for="tel" class="form-label fw-bold text-colored-green fs-5">Seu telefone</label>
+                                <input type="tel" id="tel" class="form-control">
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label fw-bold text-colored-green fs-5">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold fs-5">Enviar</button>
+                        </form>
+                    </div>
+        <!--Redes sociais e endereço-->            
+                    <div class="col-md-5">
+                        <!--Redes soviais-->
+                        <div class="row">
+                            <h3 class="section-title text-colored-green fw-bold fs-4"><i class="bi bi-hand-thumbs-up-fill"></i>Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href="#"><i class="bi bi-facebook text-colored-green"></i></a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#"><i class="bi bi-instagram text-colored-green"></i></a></li>
+                                <li class="fs-5"><a href="#"><i class="bi bi-whatsapp text-colored-green"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--Endereço-->
+                        <div class="row mt-4">
+                            <h3 class="section-title text-colored-green fw-bold fs-4"><i class="bi bi-cursor-fill"></i>Endereço</h3>
+                            <p>Rua teste, nº 555, Bairro Bootstrap-São Paulo-SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

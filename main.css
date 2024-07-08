@@ -1,0 +1,71 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #454129;
+    color: #D9CB80;
+}
+
+.section-title{
+    font-family: "Playwrite GB S", cursive;
+}
+#cabecalho .nav-link{
+    color: #D9CB80;
+}
+
+#cabecalho .nav-link.active, #contato button {
+    background-color: #D9CB80;
+    color: #454129;
+}
+
+.navbar-toggler{
+    background-color: #D9CB80;
+}
+
+.text-colored {
+    color: #ffff;
+}
+
+#sobre-livraria, #acervo{
+    background-color: #ABA065;
+}
+.text-colored-light {
+    color: #D9CB80;
+}
+
+.text-colored-green {
+    color: #454129;
+}
+
+#acervo .nav-link.active {
+    background-color: #454129;
+    color: #D9CB80;
+}
+
+#acervo .nav-link {
+    color: #454129;
+}
+
+.social-links li{
+    display: inline;
+    list-style: none;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+#acervo .tab-pane img {
+    width: 200px;
+    height: 350px;
+}
+
+
+@media (max-width: 767px){
+    
+    #acervo .tab-pane img {
+        height: 500px;
+    }
+    
+}
